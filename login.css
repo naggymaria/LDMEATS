@@ -1,0 +1,204 @@
+:root{
+	--cor1:#FF9800;
+	--cor2:#FFFBF5;
+	--cor3:#5ed015;
+	--cor4:#FFFFFF;
+	--cor5:#492101;
+	--cor6:#BBBABA;
+	--cor7:#343434;
+}
+
+body{
+	background-image: url(img/background_login.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Sunflower', sans-serif;
+	margin-left:12vw;
+	margin-top:10vh;
+	font-weight: bold;
+	font-size: 5em;
+}
+
+h1>a{
+	text-decoration: none;
+	color:var(--cor2);
+}
+/*--------------LOGIN----------------*/
+
+.login>h2{
+    font-family: 'Sunflower', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color:var(--cor2);
+}
+
+.login{
+	position:fixed;
+	width:20vw;
+	height: 40vh;
+	background-color: var(--cor1);
+	margin-left: 12vw; 
+	padding:1vh 40px 1vh 40px;
+}
+
+.login input[type=text] {
+	width:100%;
+	padding-bottom: 7px;
+	padding-top: 10px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid var(--cor2);
+    font-family: 'Sunflower', sans-serif;
+    font-weight: lighter;
+    background-color: var(--cor1);
+}
+.login input::placeholder{
+    color:var(--cor2);
+}
+
+.login>.pass{
+	margin-top: 10px;
+}
+
+
+.usertype {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #fcfff4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botao_entrar{
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    border: 2px solid var(--cor2);
+    background-color: var(--cor1);
+
+}
+
+.botao_entrar>button>a{
+	color: var(--cor2);
+}
+
+
+
+
+
+/*--------------CRIAR CONTA----------------*/
+
+.registo{
+	position:fixed;
+	width:30vw;
+	height: 60vh;
+	background-color: var(--cor4);
+	margin-left: 42vw; 
+	padding:1vh 40px 1vh 40px;
+}
+
+.registo input[type=text] {
+	width:100%;
+	padding-bottom: 7px;
+	padding-top: 10px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid var(--cor6);
+    font-family: 'Sunflower', sans-serif;
+    font-weight: lighter;
+    background-color: var(--cor4);
+}
+
+.registo>div{
+	margin-top: 10px;
+}
+
+.registo>.user{
+ 	width:45%;
+}
+.registo>.pass{
+	width:50%;
+}
+
+.registo input::placeholder{
+    color:var(--cor6);
+}
+
+.registo>h2{
+    font-family: 'Sunflower', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color:var(--cor1);
+}

@@ -1,0 +1,410 @@
+:root{
+	--cor1:#FF9800;
+	--cor2:#FFFBF5;
+	--cor3:#5ed015;
+	--cor4:#FFFFFF;
+	--cor5:#492101;
+	--cor6:#BBBABA;
+	--cor7:#343434;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+}
+
+a{
+	text-decoration: none;
+}
+
+/*---------------------------------------HEADER-------------------------------------------*/
+
+header{
+	width:100%;
+	height:80px;
+	background-color: var(--cor1);
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header> h1{
+	font-family: 'Sunflower', sans-serif;
+	margin-left:12vw;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+header>h1>a{
+	color: var(--cor2);
+}
+
+header> h4{
+	font-family: 'Roboto', sans-serif;
+	align-content: right;
+	margin-right:12vw;
+	font-weight: bolder;
+	color: var(--cor2);
+	font-size: 1.1em;
+
+}
+
+header>h4>a{
+	color: var(--cor2);
+}
+
+header>h4>a:first-child{
+	font-weight: lighter;
+	margin-right: 13px;
+}
+
+
+
+/*---------------------------------------MAIN---------------------------------------------*/
+
+
+/*--------INTRODUÇÃO----------*/
+
+.introducao{
+	widows: 90%;
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	margin: 0;
+	margin-left: 12vw;
+	padding-bottom:60px;
+}
+
+
+.introducao>.item{
+	width: 100%;
+	height: auto;
+	padding:0px;
+}
+
+.introducao>.item:first-child{
+	width:70%;
+	margin-top: 14%;
+	margin-bottom: 14%;
+
+}
+
+.introducao>.item>h1{
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor1);
+	font-weight: bolder;
+	font-size: 2.5em;
+	line-height: 50px;
+}
+
+.introducao>.item>h5{
+	font-family: 'Roboto', sans-serif;
+	color: var(--cor5);
+	font-size: 0.8em;
+	line-height: 20px;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+.introducao>.item>button{
+	margin-top: 30px;
+	margin-right: 10px;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+  	border: 2px solid var(--cor1);
+  	background-color: var(--cor4);
+}
+
+.introducao>.item>button>a{
+	color: var(--cor1);	
+}
+
+
+.introducao>.item:nth-child(2){
+	background-image: url(img/intro.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*--------CATEGORIAS----------*/
+
+.categorias{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top:10px;
+	background-color: var(--cor2);
+	grid-gap: 5px;
+}
+
+.categorias>.item0{
+	display:flex;
+	align-items: flex-end;
+	text-transform: uppercase;
+	font-family: 'Sunflower', sans-serif;
+	font-weight: bold;
+	font-size:20px;
+	color:var(--cor1);
+}
+
+.categorias>.item1{
+	width: 100%;
+	height: 400px;
+	padding:0px;
+}
+
+.categorias>.item1:first-child{
+	background-image: url(img/categorias_sushi.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias>.item1:nth-child(2){
+	background-image: url(img/categorias_fastfood.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias>.item1:nth-child(3){
+	background-image: url(img/categorias_saudavel.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias>.item1:nth-child(4){
+	background-image: url(img/categorias_massas.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias>.item1:nth-child(5){
+	background-image: url(img/categorias_pizza.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias>.item1:nth-child(6){
+	background-image: url(img/categorias_portugues.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*--------PESQUISA----------*/
+
+.pesquisa{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding-left: 12vw;
+	padding-right: 48vw;
+	margin-top:100px;
+	margin-bottom: 50px;
+	color:var(--cor6);
+
+}
+
+.pesquisa input[type=text] {
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	border: none;
+	font-size: 24px;
+	border-bottom: 1px solid var(--cor3);
+	font-family: 'Sunflower', sans-serif;
+	font-weight: lighter;
+}
+
+.tipocomida{
+	margin-left:12vw;
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.tipocomida>span:active{
+}
+
+.tipocomida>span:first-child{
+	color:var(--cor3);
+}
+
+/*--------GRELHA PESQUISA----------*/
+
+.gridpratos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding-left: 12vw;
+	padding-right: 12vw;
+	padding-bottom: 70px;
+	padding-top:20px;
+	grid-column-gap: 12px;
+	grid-row-gap: 30px;
+}
+
+.gridpratos>.item2{
+}
+
+.imgprato{
+	width:100%;
+	height:200px;
+	background-image: url(img/categorias_portugues.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categoriasprato{
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 0.8em;
+	color:var(--cor3);
+	margin-top: 20px;
+}
+
+.tituloprato{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 1.15em;
+	font-weight: bold;
+	margin-top: 7px;
+}
+
+.descricaoprato{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-top: 7px;
+	line-height:19px;
+}
+
+.precoprato{
+	font-family: 'Sunflower', sans-serif;
+	color: initial;
+	font-size: 0.9em;
+	font-weight:bold;
+	color:var(--cor3);
+	margin-top: 9px;
+}
+
+
+/*--------RESTAURANTES----------*/
+#titulorestaurantes{
+	padding-left: 5vw;
+    padding-top: 50px;
+    font-family: 'Sunflower', sans-serif;
+	font-size: 2em;
+	font-weight:bold;
+	color:var(--cor1);
+	background-color: var(--cor2);
+}
+
+.restaurantes{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 70px;
+    padding-top: 35px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    background-color: var(--cor2);
+}
+
+
+.restaurantes>.item3{
+	display: grid;
+	grid-template-columns: 3fr 5fr;
+	margin: 0;
+	grid-gap: 10px;
+}
+
+
+.imgrestaurante{
+	width:100%;
+	height:90px;
+	background-image: url(img/categorias_portugues.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.categoriarestaurante{
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 0.8em;
+	color:var(--cor1);
+}
+
+.titulorestaurante{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 7px;
+}
+.titulorestaurante>a{
+	color:var(--cor7);
+}
+
+.descricaorestaurante{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 0.7em;
+	font-weight: normal;
+	margin-top: 7px;
+	line-height:15px;
+}
+
+
+/*---------------------------------------FOOTER---------------------------------------------*/
+
+footer{
+	width:100%;
+	height:130px;
+/*	background-color: var(--cor2);*/
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;
+}
+
+footer>h1{
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor1);
+	margin-left:12vw;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+
+footer> h5{
+	font-family: 'Roboto', sans-serif;
+	align-content: right;
+	margin-right:12vw;
+	font-weight: normal;
+	line-height: 17px;
+	font-size: 1em;
+}
+
+footer> h5>a{
+	margin:13px;
+	color: var(--cor5);
+}
+footer> h5>a:hover{
+	color: var(--cor1);
+}

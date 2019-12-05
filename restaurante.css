@@ -1,0 +1,424 @@
+:root{
+	--cor1:#FF9800;
+	--cor2:#FFFBF5;
+	--cor3:#5ed015;
+	--cor4:#FFFFFF;
+	--cor5:#492101;
+	--cor6:#BBBABA;
+	--cor7:#343434;
+	--cor8:#ECECEC;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+}
+
+a{
+	text-decoration: none;
+}
+
+/*---------------------------------------HEADER-------------------------------------------*/
+
+header{
+	width:100%;
+	height:80px;
+	background-color: var(--cor1);
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header> h1{
+	font-family: 'Sunflower', sans-serif;
+	margin-left:12vw;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+header>h1>a{
+	color: var(--cor2);
+}
+
+header> h4{
+	font-family: 'Roboto', sans-serif;
+	align-content: right;
+	margin-right:12vw;
+	font-weight: bolder;
+	color: var(--cor2);
+	font-size: 1.1em;
+
+}
+
+header>h4>a{
+	color: var(--cor2);
+}
+
+header>h4>a:first-child{
+	font-weight: lighter;
+	margin-right: 13px;
+}
+
+
+
+/*---------------------------------------MAIN---------------------------------------------*/
+
+
+/*--------DETALHES RESTAURANTE----------*/
+.detalhes{
+	widows: 90%;
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	margin: 0;
+	margin-left: 12vw;
+	padding-bottom:60px;
+}
+
+.detalhes>.item{
+	width: 100%;
+	height: auto;
+	padding:0px;
+}
+
+.detalhes>.item:first-child{
+	width:70%;
+	margin-top: 14%;
+	margin-bottom: 2%;
+
+}
+
+.detalhes>.item>h1{
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor3);
+	font-weight: bolder;
+	font-size: 2.5em;
+	line-height: 50px;
+}
+
+.detalhes>.item>.categoria_restaurante{
+	margin-top: 20px;
+	text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9em;
+    color: var(--cor1);
+}
+
+.detalhes>.item>h5{
+	font-family: 'Roboto', sans-serif;
+	color: var(--cor5);
+	font-size: 0.9em;
+	line-height: 21px;
+	font-weight: normal;
+	margin-top: 15px;
+}
+
+.detalhes>.item>h4{
+	font-family: 'Roboto', sans-serif;
+	color: var(--cor6);
+	font-size: 0.8em;
+	line-height: 20px;
+	font-weight: lighter;
+	margin-top: 50px;
+}
+
+.detalhes>.item:nth-child(2){
+	background-image: url(img/intro.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*--------MENU RESTAURANTE----------*/
+
+
+h6{
+	margin-left: 12vw;
+	margin-top: 30px;
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor3);
+	font-weight: normal;
+	font-size: 2em;
+}
+
+.tipoprato{
+	margin-left: 12vw;
+	margin-top: 22px;
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor7);
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+.menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding-left: 12vw;
+	padding-right: 12vw;
+	padding-bottom: 35px;
+	padding-top:20px;
+	grid-gap: 15px;
+}
+
+.menu>.item{
+	display: grid;
+	grid-template-columns: 3fr 5fr;
+	margin: 0;
+	grid-gap: 0px;
+	border: 1.5px solid var(--cor8);
+}
+
+.menu>.item>div:nth-child(2){
+	margin:16px;
+}
+
+.imgprato{
+	width:100%;
+	height:160px;
+	background-image: url(img/categorias_portugues.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tituloprato{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.descricaoprato{
+	font-family: 'Roboto', sans-serif;
+	color: initial;
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-top: 7px;
+	line-height:15px;
+}
+
+.precoprato{
+	font-family: 'Sunflower', sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: var(--cor3);
+    margin-top: 10px;
+
+}
+
+.iconaddcart{
+	margin-left: 19.5vw;
+}
+
+.iconaddcart>img{
+	width: 33px;
+}
+
+.iconremovecart{
+
+}
+
+
+
+/*-----------------O SEU PEDIDO-----------------------*/
+
+/*-------------PEDIDO------------*/
+hr{
+    border-top: 1px solid var(--cor8);
+    margin-bottom: 12px;
+    margin-top:12px;
+}
+
+.pedido>.tituloseupedido{
+	margin-bottom: 30px;
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor1);
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.pedido{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding-left: 26vw;
+	padding-right: 26vw;
+	padding-bottom: 35px;
+	padding-top:20px;
+}
+
+.prato{
+	font-family: 'Sunflower', sans-serif;
+    color: var(--cor6);
+    font-weight: 0.8em;
+    margin-top: 25px;
+}
+
+.pedido>.pratoadicionado{
+	display: grid;
+    grid-template-columns: 2fr 13fr 2fr 1fr;
+    margin: 0;
+    margin-left: 12px;
+    font-family: 'Sunflower', sans-serif;
+
+}
+
+.quantidade{
+    color: var(--cor6);
+    font-weight: 0.8em;
+}
+
+.nome{
+	font-family: 'Roboto', sans-serif;
+    color: var(--cor7);
+    font-weight: 0.8em;
+}
+
+.preco{
+    color: var(--cor7);
+    font-weight: 0.8em;
+}
+
+.removerprato{
+	width:19px;
+	height: 19px;
+}
+
+
+/*----------DETALHES DO PEDIDO------*/
+
+.detalhespedido{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding-left: 26vw;
+	padding-right: 40vw;
+	padding-bottom: 35px;
+}
+
+
+.detalhespedido>p{
+	margin-top: 60px;
+	margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--cor1);
+}
+
+.detalhespedido>.item2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	grid-gap: 35px;
+}
+
+.titulo{
+	font-family: 'Sunflower', sans-serif;
+    color: var(--cor6);
+    font-weight: 0.75em;
+    margin-top: 25px;
+
+}
+
+.detalhespedido input[type=text] {
+	width:100%;
+	padding-bottom: 7px;
+	padding-top: 7px;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid var(--cor6);
+    font-family: 'Sunflower', sans-serif;
+    font-weight: lighter;
+    background-color: var(--cor4);
+}
+
+
+.finalizarpedido{
+	width:11vw;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid var(--cor1);
+    background-color: var(--cor1);
+    color:var(--cor2);
+}
+
+.pedidofinalizado{
+	width:11vw;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid var(--cor1);
+    background-color: var(--cor4);
+    color:var(--cor1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------FOOTER---------------------------------------------*/
+
+footer{
+	width:100%;
+	height:130px;
+	background-color: var(--cor2);
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;
+}
+
+footer>h1{
+	font-family: 'Sunflower', sans-serif;
+	color: var(--cor1);
+	margin-left:12vw;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+
+footer> h5{
+	font-family: 'Roboto', sans-serif;
+	align-content: right;
+	margin-right:12vw;
+	font-weight: normal;
+	line-height: 17px;
+	font-size: 1em;
+}
+
+footer> h5>a{
+	margin:13px;
+	color: var(--cor5);
+}
+footer> h5>a:hover{
+	color: var(--cor1);
+}
